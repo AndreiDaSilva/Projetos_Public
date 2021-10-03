@@ -6,10 +6,9 @@ public class Cliente {
 	private HashMap<String, Telefonia > telefone = new HashMap<>();
 
 	
-	public Cliente(LocalDate dataInstalacao, String endereco, String telefone, String nome) {
+	public Cliente(String endereco, String telefone, String nome) {
 		setNome(nome);
 		setEndereco(endereco);
-		setDataInstalacao(dataInstalacao);
 		criaPlano(telefone);
 		
 	}
