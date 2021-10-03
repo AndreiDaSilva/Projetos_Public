@@ -1,4 +1,7 @@
+import java.time.LocalDate;
+
 public class Telefonia {
+	private LocalDate dataInstalacao;
 	private String linha;
 	private String nTelefone;
 	private String ocorrencias;

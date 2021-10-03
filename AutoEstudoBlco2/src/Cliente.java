@@ -1,8 +1,6 @@
-import java.time.LocalDate;
 import java.util.HashMap;
 
 public class Cliente {
-	private LocalDate dataInstalacao;
 	private String endereco;
 	private String nome;
 	private HashMap<String, Telefonia > telefone = new HashMap<>();
@@ -16,12 +14,6 @@ public class Cliente {
 		
 	}
 	
-	public LocalDate getDataInstalacao() {
-		return dataInstalacao;
-	}
-	public void setDataInstalacao(LocalDate dataInstalacao) {
-		this.dataInstalacao = dataInstalacao;
-	}
 	public String getEndereco() {
 		return endereco;
 	}
