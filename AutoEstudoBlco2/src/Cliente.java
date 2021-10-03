@@ -5,7 +5,7 @@ public class Cliente {
 	private LocalDate dataInstalacao;
 	private String endereco;
 	private String nome;
-	private HashMap<String, Telefonia> telefone = new HashMap<>();
+	private HashMap<String, Telefonia > telefone = new HashMap<>();
 
 	
 	public Cliente(LocalDate dataInstalacao, String endereco, String telefone, String nome) {
@@ -42,7 +42,7 @@ public class Cliente {
 	}
 	
 	public void criaPlano(String nTelefone) {
-		this.telefone.put(telefone,new Telefonia(nTelefone, this));
+		this.telefone.put(nTelefone, new Telefonia (nTelefone, this));
 	}
 	
 }
