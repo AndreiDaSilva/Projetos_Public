@@ -5,7 +5,11 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 //Andrei Robson da Silva
-//Pietro
+//Pietro Kucharski
+
+//O trabalho enviado esta incompleto, faltaram os tratamento do valor total de faturamento, 
+//e valor cada plano do usurio, tambem nao foi possivel fazer a parte de apresentaçao do projeto!
+
 
 public class Apresentacao {
 
