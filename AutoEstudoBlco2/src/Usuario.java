@@ -10,7 +10,7 @@ public class Usuario {
 	public Usuario(String endereco, String telefone, String nome, LocalDate dataInstalacao) throws Exception {
 		setNome(nome);
 		setEndereco(endereco);
-		criaPlano(telefone, dataInstalacao);
+		criaPlano(telefone, dataInstalacao, (char) 0);
 	}
 	
 	
@@ -33,7 +33,7 @@ public class Usuario {
 		this.telefone = telefone;
 	}
 	
-	public void criaPlano(String nTelefone, LocalDate dataInstalacao) throws Exception {
+	public void criaPlano(String nTelefone, LocalDate dataInstalacao, char tipoPlano) throws Exception {
 		if(nTelefone.length() != 10) {
 			throw new Exception("Numero de telefone deve conter 10 digitos");
 		}
@@ -42,7 +42,7 @@ public class Usuario {
 			throw new Exception("Telefone já existe");
 		} 
 		
-		this.telefone.put(nTelefone, new Plano (nTelefone, this, dataInstalacao));
+		this.telefone.put(nTelefone, new Plano(nTelefone, this, dataInstalacao, tipoPlano));
 	}
 	
 }

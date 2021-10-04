@@ -2,7 +2,6 @@ import java.time.LocalDate;
 
 public class Plano {
 	private LocalDate dataInstalacao;
-	private String linha;
 	private String nTelefone;
 	private int ocorrencias;
 	private Boolean internet;
@@ -11,10 +10,11 @@ public class Plano {
 	private Usuario cliente;
 	
 	
-	public Plano(String nTelefone, Usuario cliente, LocalDate dataInstalacao) {
+	public Plano(String nTelefone, Usuario cliente, LocalDate dataInstalacao, char tipoPlano) {
 		setCliente(cliente);
 		setnTelefone(nTelefone);
 		setDataInstalacao(dataInstalacao);
+		setTipoPlano(tipoPlano);
 	}
 	
 	public double getValorPlano(){
@@ -71,14 +71,6 @@ public class Plano {
 
 	public void setDataInstalacao(LocalDate dataInstalacao) {
 		this.dataInstalacao = dataInstalacao;
-	}
-
-	public String getLinha() {
-		return linha;
-	}
-
-	public void setLinha(String linha) {
-		this.linha = linha;
 	}
 	
 	public String getnTelefone() {
